@@ -1,6 +1,6 @@
-import { configDotenv } from 'dotenv';
-import app from './app.js';
-import connectDatabase from './config/database.js';
+const { configDotenv } = require('dotenv');
+const app = require('./app.js');
+const connectDatabase = require('./config/database.js');
 
 
 configDotenv({ path: ".env" });
